@@ -1,7 +1,7 @@
 package com.coderbyte.listview.pojo
 
 class User(
-    val id: Int,
+    val id: Long,
     val name: String,
     val username: String,
     val address: Address,
