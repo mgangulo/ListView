@@ -12,7 +12,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/listView">
+        android:id="@+id/listView"
+        android:layout_marginTop="@dimen/list_margin"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin">
 
     </ListView>
 

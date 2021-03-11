@@ -12,6 +12,7 @@ import com.coderbyte.listview.databinding.FragmentFirstBinding
 import com.coderbyte.listview.networking.UserHandler
 import com.coderbyte.listview.pojo.User
 import com.coderbyte.listview.ui.adapters.UserAdapter
+import com.coderbyte.listview.ui.presenters.FirstFragmentPresenter
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -19,11 +20,10 @@ import retrofit2.Response
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class FirstFragment : Fragment() {
+class FirstFragment : Fragment(),FirstFragmentPresenter.UserPresenter {
     private var _binding: FragmentFirstBinding? = null
-    // This property is only valid between onCreateView and
-// onDestroyView.
     private val binding get() = _binding!!
+
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
@@ -57,5 +57,21 @@ class FirstFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun onSuccess(userList: List<User>) {
+        if (context!=null) {
+            binding.listView.adapter = UserAdapter(userList, requireContext())
+        }
+    }
+
+    override fun onFailure(msg: String?) {
+        if (context!=null) {
+        }
+    }
+
+    override fun onFailure(code: Int) {
+        if (context!=null) {
+        }
     }
 }

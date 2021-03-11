@@ -9,4 +9,19 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="general_information">General Information</string>
+    <string name="company">Company</string>
+    <string name="address">Address</string>
+    <string name="name"><b>Name: </b> %1$s</string>
+    <string name="username"><b>Username: </b> %1$s</string>
+    <string name="email"><b>Email: </b> %1$s</string>
+    <string name="phone"><b>Phone: </b> %1$s</string>
+    <string name="website"><b>Website: </b> %1$s</string>
+    <string name="street"><b>Street: </b> %1$s</string>
+    <string name="suite"><b>Suite: </b> %1$s</string>
+    <string name="zipcode"><b>Zipcode: </b> %1$s</string>
+    <string name="city"><b>City: </b> %1$s</string>
+    <string name="coordinates"><b>Coordinates: </b> %1$f,%2$f</string>
+    <string name="catchphrase"><b>Catchprase: </b> %1$s</string>
+    <string name="bs"><b>BS: </b> %1$s</string>
 </resources>
