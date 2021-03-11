@@ -66,6 +66,7 @@
                     android:layout_marginStart="@dimen/list_margin"
                     android:layout_marginEnd="@dimen/list_margin"
                     android:layout_marginBottom="@dimen/list_margin" />
+
                 <TextView
                     android:id="@+id/phoneText"
                     android:layout_width="match_parent"
@@ -73,6 +74,7 @@
                     android:layout_marginStart="@dimen/list_margin"
                     android:layout_marginEnd="@dimen/list_margin"
                     android:layout_marginBottom="@dimen/list_margin" />
+
                 <TextView
                     android:id="@+id/websiteText"
                     android:layout_width="match_parent"
@@ -81,69 +83,7 @@
                     android:layout_marginEnd="@dimen/list_margin"
                     android:layout_marginBottom="@dimen/list_margin" />
             </LinearLayout>
-        </androidx.cardview.widget.CardView><androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/list_margin"
-        android:layout_marginTop="@dimen/list_margin"
-        android:layout_marginEnd="@dimen/list_margin"
-        android:layout_marginBottom="@dimen/list_margin">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/list_margin"
-                android:layout_marginTop="@dimen/list_margin"
-                android:layout_marginEnd="@dimen/list_margin"
-                android:layout_marginBottom="@dimen/list_margin"
-                android:text="@string/address"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/streetText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/list_margin"
-                android:layout_marginEnd="@dimen/list_margin"
-                android:layout_marginBottom="@dimen/list_margin" />
-
-            <TextView
-                android:id="@+id/suiteText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/list_margin"
-                android:layout_marginEnd="@dimen/list_margin"
-                android:layout_marginBottom="@dimen/list_margin" />
-
-            <TextView
-                android:id="@+id/cityText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/list_margin"
-                android:layout_marginEnd="@dimen/list_margin"
-                android:layout_marginBottom="@dimen/list_margin" />
-
-            <TextView
-                android:id="@+id/zipcodeText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/list_margin"
-                android:layout_marginEnd="@dimen/list_margin"
-                android:layout_marginBottom="@dimen/list_margin" />
-            <TextView
-                android:id="@+id/coordinatesText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/list_margin"
-                android:layout_marginEnd="@dimen/list_margin"
-                android:layout_marginBottom="@dimen/list_margin" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -162,9 +102,74 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/list_margin"
-                    android:layout_marginTop="@dimen/list_margin"
+                    android:layout_marginTop="@dimen/card_text_margin"
                     android:layout_marginEnd="@dimen/list_margin"
-                    android:layout_marginBottom="@dimen/list_margin"
+                    android:layout_marginBottom="@dimen/card_text_margin"
+                    android:text="@string/address"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/streetText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/list_margin"
+                    android:layout_marginEnd="@dimen/list_margin"
+                    android:layout_marginBottom="@dimen/card_text_margin" />
+
+                <TextView
+                    android:id="@+id/suiteText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/list_margin"
+                    android:layout_marginEnd="@dimen/list_margin"
+                    android:layout_marginBottom="@dimen/card_text_margin" />
+
+                <TextView
+                    android:id="@+id/cityText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/list_margin"
+                    android:layout_marginEnd="@dimen/list_margin"
+                    android:layout_marginBottom="@dimen/card_text_margin" />
+
+                <TextView
+                    android:id="@+id/zipcodeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/list_margin"
+                    android:layout_marginEnd="@dimen/list_margin"
+                    android:layout_marginBottom="@dimen/card_text_margin" />
+
+                <TextView
+                    android:id="@+id/coordinatesText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/list_margin"
+                    android:layout_marginEnd="@dimen/list_margin"
+                    android:layout_marginBottom="@dimen/card_text_margin" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/list_margin"
+            android:layout_marginTop="@dimen/list_margin"
+            android:layout_marginEnd="@dimen/list_margin"
+            android:layout_marginBottom="@dimen/list_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/list_margin"
+                    android:layout_marginTop="@dimen/card_text_margin"
+                    android:layout_marginEnd="@dimen/list_margin"
+                    android:layout_marginBottom="@dimen/card_text_margin"
                     android:text="@string/company"
                     android:textStyle="bold" />
 
@@ -174,7 +179,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/list_margin"
                     android:layout_marginEnd="@dimen/list_margin"
-                    android:layout_marginBottom="@dimen/list_margin" />
+                    android:layout_marginBottom="@dimen/card_text_margin" />
 
                 <TextView
                     android:id="@+id/catchphraseText"
@@ -182,7 +187,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/list_margin"
                     android:layout_marginEnd="@dimen/list_margin"
-                    android:layout_marginBottom="@dimen/list_margin" />
+                    android:layout_marginBottom="@dimen/card_text_margin" />
 
                 <TextView
                     android:id="@+id/bsText"
@@ -190,14 +195,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/list_margin"
                     android:layout_marginEnd="@dimen/list_margin"
-                    android:layout_marginBottom="@dimen/list_margin" />
+                    android:layout_marginBottom="@dimen/card_text_margin" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
-        <Button
-            android:id="@+id/button_second"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/previous" />
     </LinearLayout>
 </ScrollView>

@@ -23,6 +23,7 @@ import retrofit2.Response
 class FirstFragment : Fragment(),FirstFragmentPresenter.UserPresenter {
     private var _binding: FragmentFirstBinding? = null
     private val binding get() = _binding!!
+    private val presenter:FirstFragmentPresenter = FirstFragmentPresenter();
 
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
@@ -35,23 +36,14 @@ class FirstFragment : Fragment(),FirstFragmentPresenter.UserPresenter {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        view.findViewById<Button>(R.id.button_first).setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+        presenter.getUserList(this)
+        binding.listView.setOnItemClickListener(){adapterView, view, position, id ->
+            val userData = adapterView.getItemAtPosition(position)
+            if (userData is User){
+                val navigateAction = FirstFragmentDirections.actionFirstFragmentToSecondFragment(userData)
+                findNavController().navigate(navigateAction)
+            }
         }
-
-        UserHandler.getUserList(object : Callback<List<User>> {
-            override fun onResponse(call: Call<List<User>>, response: Response<List<User>>) {
-                if (response.isSuccessful && context!=null) {
-                    binding.listView.adapter = UserAdapter(response.body()!!,context!!)
-                }
-            }
-
-            override fun onFailure(call: Call<List<User>>, t: Throwable) {
-                TODO("Not yet implemented")
-            }
-
-        })
     }
 
     override fun onDestroyView() {
