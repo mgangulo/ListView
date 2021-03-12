@@ -25,4 +25,8 @@
     <string name="coordinates"><b>Coordinates: </b> %1$f,%2$f</string>
     <string name="catchphrase"><b>Catchprase: </b> %1$s</string>
     <string name="bs"><b>BS: </b> %1$s</string>
+    <string name="error_code"><b>Error code: </b> %1$d</string>
+    <string name="error"><b>Error</b></string>
+    <string name="ok"><b>Ok</b></string>
+    <string name="unknown_error"><b>Unknown Error</b></string>
 </resources>
